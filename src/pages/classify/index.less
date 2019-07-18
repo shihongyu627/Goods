@@ -1,0 +1,110 @@
+.classify_wrapper {
+    width: 100%;
+    height: 100%;
+    background:rgba(247,244,234,1);
+    .classify_header {
+        width: 100%;
+        height: 127px;
+        background:linear-gradient(360deg,rgba(214,184,23,1) 0%,rgba(255,225,66,1) 100%);
+        position: relative;
+        z-index: 10;
+        .classify_search {
+            color:#1D1D1D;
+            .at-icon-search {
+                width:28px;
+                height:28px;
+                opacity:0.71;
+                position: absolute;
+                left: 199px;
+                top: 37px;
+                z-index: 10;
+            }
+        }
+        .search_name {
+            width:686px;
+            height:92px;
+            background:rgba(255,255,255,1);
+            box-shadow:0px 4px 16px 0px rgba(225,197,47,1);
+            border-radius:6px;
+            font-size:28px;
+            color:rgba(153,153,153,1);
+            line-height:92px;
+            text-indent: 220px;
+            position: absolute;
+            left: 32px;
+            top: 5px;
+        }
+    }
+    .goods_body {
+        display: flex;
+        flex-wrap: wrap; 
+        width: 100%;
+        height: 100%;
+      .left_item_name {
+        display: flex;
+        width: 167px;
+        height: 100%;
+        background-color: #FAFAFA;
+        flex-direction: column;
+      }
+      .goods_name {
+        width: 167px;
+        height: 103px;
+        font-size: 28px;
+        line-height: 103px;
+        text-align: center;
+        box-sizing: border-box;
+        color:rgba(51,51,51,1);
+        position: relative;
+      }
+      .active {
+        color:rgba(240,188,39,1);
+      }
+      .actives {
+        width:8px;
+        height:68px;
+        background:rgba(240,188,39,1);
+        border-radius:4px;
+        position: absolute;
+        left: 0;
+        top: 17px;
+      }
+      .right_list_wrapper {
+        position: relative;
+        width: 583px;
+        height: 100%;
+        background:rgba(248,248,248,1);
+        overflow: hidden;
+        .right_list {
+            width: 462px;
+            height: 197px;
+            margin-top: 36px;
+            margin-left: 60px;
+            margin-bottom: 28px;
+            display: flex;
+            justify-content: space-between;
+            .right_list_item {
+                width: 126px;
+                height: 100%;
+
+                .right_list_item_pic {
+                    width:126px;
+                    height:126px;           
+                    image {
+                        border-radius: 20px;
+                    }
+                }
+                .right_list_item_txt {
+                    height:28px;
+                    font-size:20px;
+                    font-weight:500;
+                    color:rgba(51,51,51,1);
+                    line-height:28px;
+                    text-align: center;
+                    margin-top: 24px;
+                }
+            }
+        }
+      }
+    }   
+}

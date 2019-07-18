@@ -1,0 +1,205 @@
+.buyCar_index {
+    width: 100%;
+    height: 100%;
+    background:rgba(247,244,234,1);
+    .buyCar_header {
+        width: 100%;
+        height:52px;
+        background:rgba(255,255,255,1);
+        font-size:24px;
+        color:rgba(51,51,51,1);    
+        .buyCar_header_txtWp {
+            height: 33px;
+            position: absolute;
+            margin-left: 289px;
+            margin-top: 10px;
+            display: flex;
+            line-height: 33px;
+            .buyCar_header_txt {
+                color: #EA625C;
+            }   
+        }
+        
+    }
+    .burCar_edit {
+        width: 100%;
+        height: 94px;
+        position: relative;
+        .burCar_edit_btn {
+            width:107px;
+            height:44px;
+            background:rgba(248,214,59,1);
+            border-radius:22px;            
+            font-size:30px;
+            font-weight:500;
+            color:rgba(255,255,255,1);
+            text-align: center;
+            line-height:44px;          
+            position: absolute;
+            right: 32px;
+            top: 30px;
+            border: 0; 
+        }
+    }
+    .buyCar_list {
+        width: 686px;
+        margin-left: 32px;
+        .buyCar_list_item {
+            width: 100%;
+            height: 160px;
+            margin-bottom: 32px;
+            position: relative;
+            .buyCar_list_item_raduis {
+                width:44px;
+                height:44px;
+                border:2px solid rgba(207,197,164,1);
+                margin-top: 58px;
+                border-radius: 50%;
+                position: absolute;
+                .at-icon-check {
+                    display: none;
+                }
+                .active {
+                    display: block;
+                    width:32px;
+                    height:21px;
+                    position: absolute; 
+                    color: #ffffff;
+                    top: 4rpx;
+                    left: 7rpx;    
+                }
+            }
+            .onActive {
+                background:rgba(248,214,59,1);
+            }
+            .buyCar_list_item_pic {
+                width: 160px;
+                height: 160px;    
+                position: absolute;
+                left: 76px;
+            }
+            .buyCar_list_item_txt {
+                width:423px;
+                height:80px;
+                font-size:28px;
+                color:rgba(51,51,51,1);
+                line-height:40px;
+                position: absolute;
+                left: 263px;
+                top: 0;
+                word-break:break-all;
+                text-overflow:ellipsis;//显示为省略号
+                display:-webkit-box;//对象作为伸缩盒子模型显示
+                -webkit-box-orient:vertical;//设置或检索伸缩盒对象的子元素的排列方式
+                -webkit-line-clamp:2;//显示行数## 标题文字 ##
+                overflow:hidden; 
+            }
+            .buyCar_list_item_sell {
+                width:112px;
+                height:56px;
+                font-size:40px;
+                color:rgba(234,98,92,1);
+                line-height:56px;
+                position: absolute;
+                left: 263px;
+                bottom: 0;
+            }
+            .buyCar_list_item_btn {
+                width: 141px;
+                height: 36px;
+                display: flex;
+                justify-content: space-between;
+                position: absolute;
+                right: 0;
+                bottom: 10px;
+                .buyCar_list_item_sub {
+                    width: 22px;
+                    height: 22px;
+                    margin-top: -3px;
+                }
+                .buyCar_list_item_sum {
+                    width:73px;
+                    height:36px;
+                    text-align: center;
+                    line-height: 36px;
+                    background:rgba(223,220,205,1);
+                    font-size:26px;
+                    color:rgba(177,163,115,1);
+                }
+                .buyCar_list_item_add {
+                    width: 22px;
+                    height: 22px;
+                    margin-top: -3px;
+                }
+            }
+        }
+    }
+    .buyCar_footer {
+        width: 100%;
+        height:100px;
+        background:rgba(255,255,255,1);
+        border:1px solid rgba(206,206,206,1);       
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        .buyCar_footer_raduis {
+            width:44px;
+            height:44px;
+            border:2px solid rgba(51,51,51,1);
+            border-radius: 50%;
+            position: absolute;
+            top: 28px;
+            left: 32px;
+        }
+        .buyCar_footer_all {
+            width:56px;
+            height:40px;
+            font-size:28px;
+            color:rgba(51,51,51,1);
+            line-height:40px;      
+            position: absolute;
+            left: 108px;      
+            top: 30px;
+        }
+        .buyCar_footer_total {
+            width:201px;
+            height:40px;
+            font-weight:500;
+            color:rgba(51,51,51,1);
+            line-height:42px;        
+            position: absolute;
+            left: 192px;
+            top: 28px;
+        }
+        .buyCar_footer_btn {
+            width:247px;
+            height:72px;
+            background:rgba(234,98,92,1);
+            border-radius:36px;
+            font-size:30px;
+            font-weight:500;
+            color:rgba(255,255,255,1);
+            line-height:72px;    
+            text-align: center;     
+            position: absolute; 
+            right: 32px;
+            top: 14px;
+            // .buyCar_footer_btn_txt {
+            //     width:90px;
+            //     height:36px;
+            //     font-family:PingFangSC-Medium;
+            //     font-weight:500;
+            //     color:rgba(255,255,255,1);
+            //     line-height:42px;
+            // }
+            // .buyCar_footer_btn_sum {
+            //     width:80px;
+            //     height:36px;
+            //     font-family:PingFangSC-Medium;
+            //     font-weight:500;
+            //     color:rgba(255,255,255,1);
+            //     line-height:42px;
+            // }
+        }
+    }
+}

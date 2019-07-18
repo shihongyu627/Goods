@@ -1,0 +1,265 @@
+.category_wrapper {
+    width: 100%;
+    height: 100%;
+    background:rgba(247,244,234,1);
+    .category_header {
+        width: 100%;
+        height: 317px;
+        background:linear-gradient(360deg,rgba(214,184,23,1) 0%,rgba(255,225,66,1) 100%);
+        border-radius:0px 0px 50px 50px;
+        position: relative;
+        z-index: 10;
+        .category_search {
+            color:#1D1D1D;
+            .at-icon-search {
+                width:28px;
+                height:28px;
+                opacity:0.71;
+                position: absolute;
+                left: 199px;
+                bottom: 226px;
+                z-index: 10;
+            }
+        }
+        .search_name {
+            width:686px;
+            height:92px;
+            background:rgba(255,255,255,1);
+            box-shadow:0px 4px 16px 0px rgba(225,197,47,1);
+            border-radius:6px;
+            font-size:28px;
+            color:rgba(153,153,153,1);
+            line-height:92px;
+            text-indent: 220px;
+            position: absolute;
+            left: 32px;
+            bottom: 191px;
+        }
+        .category_header_pic {
+            width:686px;
+            height:260px;
+            background:rgba(254,254,254,1);
+            position: absolute;
+            left: 32px;
+            bottom: -95px;
+            z-index: 11;
+            image {
+                box-shadow:0px 4px 16px 0px rgba(153,153,153,0.24);
+                border-radius:8px;
+            }
+        }
+    }
+    .category_content {
+        width:100%;
+        // height:100%;
+        margin-top: -43px;
+        position: absolute;
+        background:rgba(247,244,234,1);
+        .category_item {
+            // height: 142px;
+            width: 618px;
+        //    position: absolute;
+        //    top: 192px;
+        //    left: 66px;
+        margin-left: 66px;
+        margin-top: 192px;
+            z-index: 10;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-bottom: 12px;
+            .category_item_pic {
+                width:94px;
+                height:94px;
+                background:rgba(223,220,205,1);        
+                border-radius: 50%;
+                position: relative;
+                image {
+                    width:78px;
+                    height:58px;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    margin: auto auto;
+                }
+            }
+            .category_item_flex {
+                height: 142px;
+                width: 96px;
+                display: flex;
+                flex-flow: column;
+                justify-content: space-between;
+                margin-left: 48px;
+                margin-bottom: 12px;
+            }
+            .category_item_flex_one {
+                margin-left: 0;
+            }
+            .category_item_name {
+                height:32px;
+                font-size:24px;
+                color:rgba(51,51,51,1);
+                line-height:32px;
+            }
+        }
+        .category_sort {
+            height: 50px;
+            display: flex;
+            margin-top: 48px;
+            margin-left: 32px;
+            position: relative;
+            .category_sort_title {
+                height:50px;
+                font-size:36px;
+                font-weight:500;
+                color:rgba(234,98,92,1);
+                line-height:50px;
+            }
+            .category_sort_radius {
+                width:36px;
+                height:36px;
+                border: 1px solid #EA625C;
+                border-radius: 50%;
+                margin-top: 7px;
+                position: relative;
+                margin-left: 10px;
+                .active {
+                    transform: rotate(180deg);
+                    // transition: transform 0.2s ease;
+                    // transform-origin: center;
+                    line-height: 1;
+                    left: 10px;
+                    top: 20px;
+                }
+                .at-icon-chevron-down {
+                    width:25px;
+                    height:14px;
+                    font-size: 36px;   
+                    position: absolute;   
+                    color: #EA625C;      
+                    // transition: transform 0.2s ease;
+                }
+            }
+        }  
+        .list_itemWp {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            .list_item {
+                background: #ffffff;
+                position: absolute;
+                width: 100%;
+                height: 520px;
+                z-index: 10;
+                margin-top: 24px;
+                .list_item_content{
+                    width:718px;
+                    height:104px;   
+                    border-bottom: 1px solid rgba(238,238,238,1);      
+                    // position: absolute;   
+                    margin-left: 32px;
+                    .list_item_txt {
+                        width:527px;
+                        height:104px;
+                        font-size:34px;
+                        color:rgba(51,51,51,1);;
+                        line-height:104px;                       
+                    }
+                    .at-icon-check {
+                        display: none;
+                    }
+                    .active {
+                        display: block;
+                        width:39px;
+                        height:26px;
+                        margin-top: -70px;
+                        margin-left: 645px;
+                        color: #EA625C;
+                    }
+                    .activeTxt {
+                        color:rgba(234,98,92,1);
+                    }
+                }
+              
+                .list_item_content_last {
+                    border: 0;
+                }
+            }
+       
+            .boxShow {
+                width:100%;
+                height:100%;
+                background:rgba(0,0,0,1);
+                opacity:0.09;
+                position: absolute;
+                top: 520px;
+            }
+            .at-list__item  {
+                padding: 29px 30px;
+            }
+        }
+        .activeList {
+            width: 100%;
+            // height: 150px;
+            display: none;
+        }
+        .category_sort_list {
+            width: 686px;
+            height: 492px;
+            margin-top: 24px;
+            margin-bottom: 30px;
+            margin-left: 32px;
+            display: flex;
+            justify-content: space-between;
+            .category_sort_list_item {
+                width: 336px;
+                height: 100%;
+                .category_sort_list_pic {
+                    width: 336px;
+                    height: 336px;
+                }
+                .category_sort_list_txt {
+                    width: 100%;
+                    height:84px;
+                    font-size:30px;
+                    font-weight:500;
+                    color:rgba(51,51,51,1);
+                    line-height:42px;  
+                    word-break:break-all;
+                    text-overflow:ellipsis;//显示为省略号
+                    display:-webkit-box;//对象作为伸缩盒子模型显示
+                    -webkit-box-orient:vertical;//设置或检索伸缩盒对象的子元素的排列方式
+                    -webkit-line-clamp:2;//显示行数## 标题文字 ##
+                    overflow:hidden;           
+                    margin-top: 16px;
+                }
+                .category_sort_list_sell {
+                    height: 50px;
+                    position: relative;
+                    margin-top: 6px;
+                    .category_sort_list_price {
+                        width:85px;
+                        height:50px;
+                        font-size:36px;
+                        font-weight:500;
+                        color:rgba(255,59,48,1);
+                        line-height:50px;
+                        position: absolute;
+                        left: 0;
+                    }
+                    .category_sort_list_buyPic {
+                        width: 44px;
+                        height: 44px;
+                        border-radius: 50%;
+                        position: absolute;
+                        right: 0;
+                        margin-top: 3px;
+                    }
+                }
+            }
+   
+        }
+    }
+}
